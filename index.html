@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>space travel</title>
 </head>
 <body>
@@ -14,14 +15,29 @@
             
         
         </div>
-        <nav>
+        <div class="respmenu">
+            <input type="checkbox">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-times"></i>
+            <nav>
+              <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+              </ul>
+            </nav>
+        </div>
+        <nav id="navegador">
             
             <ul>
-                <li>Nuestra empresa</li>
-                <li>Servicios</li>
-                <li>Naves insignia</li>
-                <li>Escolta militar</li>
-                <li>Contratanos</li>
+                <li> <a href="#nuestra_empresa">Nuestra empresa</a> </li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sectionTours">Tours Recomendados</a></li>
+                <li><a href="#contact">Contactanos</a></li>
+                <li><a href="login.html">Login</a></li>
+                
             </ul>
         
         </nav>
@@ -31,7 +47,11 @@
             <div id="titulo">
                 <h1>EXPERIENCIA ESTELAR</h1>
             </div>
-            <div id="imagen"></div>
+            <div id="imagen">
+                <div>
+                    <img src="./recursos/_106649732_hi036401388.jpg" alt="imagen de luna">
+                </div>
+            </div>
             <div id="frase">
                 <div id="frase1">
                     <p>BIENVENIDOS</p>
@@ -58,10 +78,128 @@
                     a que confien en nuestras naves comerciales de ultimo modelo, y a que no se preocupen mas que por el polvo espacial con nuestro nuevo servicio de escolta militar.
                 </div>
                 <div id="imagen_nosotros">
-                    
+                    <div id="nave">
                         <img src="./recursos/nave inicio.png" alt="nave espacial">
                     
+                    </div>
+                        
                     
+                </div>
+            </div>
+        </section>
+        <section id="servicios">
+            <div id="containerServicios">
+               
+                    <div class="servicio">
+                        <div>
+                            <img src="./recursos/1624.jpg" alt="imagen tours">
+                        </div>
+                        <div class="serv_info">
+                            <p>Explora los paisajes estelares con nuestros tours altamente recomendados.</p>
+                        </div>
+                    </div>
+                    <div class="servicio">
+                        <div >
+                            <img src="./recursos/1003.jpg" alt="imagen de colonia">
+                        </div>
+                        <div class="serv_info">
+                            <p>Confia en nosotros para tu mudanza a las nuevas colonias, y conviertete en un pionero de la exploracion espacial.</p>
+                        </div>
+                    </div>
+                    
+                
+                 
+            </div>
+        </section>
+        <section>
+            <div id="containerServicios">
+               
+                    <div class="servicio">
+                        <div>
+                            <img src="./recursos/2262.jpg" alt="imagen alquiler">
+                        </div>
+                        <div class="serv_info">
+                            <p>Alquila nuestras naves especializadas para comerciantes y utiliza libremente nuestros puertos espaciales.</p>
+                        </div>
+                    </div>
+                    <div class="servicio">
+                        <div >
+                            <img src="./recursos/ilustracion-isometrica-naves-espaciales-militares-volando-espacio_1284-59500.jpg" alt="imagen de colonia">
+                        </div>
+                        <div class="serv_info">
+                            <p>!NOSOTROS TE PROTEGEREMOS! Con nuestra nueva linea de naves de escolta militar.</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section id="sectionTours">
+            <div class="wrapper">
+                <div class="slider" id="slider">
+                  <ul class="slides">
+                    <li class="slide" id="slide1">
+                      <a href="#">
+                        <p class="caption">!Nueva¡ Colonia vacacional.</p>
+                        <img src="./recursos/Fantasia-espacial.jpg" alt="photo 1">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide2">
+                      <a href="#">
+                        <p class="caption">Visita el mundo verde de Bundle</p>
+                        <img src="./recursos/runeterra-bandlecity-03.jpg" alt="photo 2">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide3">
+                      <a href="#">
+                        <p class="caption">Nada en el mundo oceanico de DeepBlue</p>
+                        <img src="./recursos/sci-fi-5900340_960_720.jpg" alt="photo 3">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide4">
+                      <a href="#">
+                        <p class="caption">Cautivate con la super cataratas del planeta H1Z1</p>
+                        <img src="./recursos/4b9f1ecdb0e0ba9703a57ea33442af3b.jpg" alt="photo 4">
+                      </a>
+                    </li>
+                    <li class="slide" id="slide5">
+                      <a href="#">
+                         <p class="caption">Visita el poso sin fondo de GravityFalls</p>
+                         <img src="./recursos/landscape-4227087_960_720.jpg" alt="photo 5">
+                      </a>
+                    </li>
+                    <li class="slide">
+                      <a href="#">
+                        <p class="caption">!Nueva¡ Colonia vacional.</p>
+                        <img src="./recursos/Fantasia-espacial.jpg" alt="photo 1">
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="slider-controler">
+                    <li><a href="#slide1">&bullet;</a></li>
+                    <li><a href="#slide2">&bullet;</a></li>
+                    <li><a href="#slide3">&bullet;</a></li>
+                    <li><a href="#slide4">&bullet;</a></li>
+                    <li><a href="#slide5">&bullet;</a></li>
+                  </ul>
+                </div>
+              </div>
+        </section>
+        <section id="contact">
+            <div id="espacio"></div>
+            <div id="contactTitulo"><h3>Contactanos</h3></div>
+            <div id="containerContact">
+                <div>
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <div>
+                    <form action="">
+                        <label for="nombre"></label>
+                        <input type="text" id="nombre" placeholder="Nombre y apellido">
+                        <label for="email"></label>
+                        <input type="email" id="email" placeholder="Email">
+                        <label for="consulta"></label>
+                        <input type="text-area" id="consulta" placeholder="Por favor deje su consulta y responderemos a la brevedad">
+                        <input type="submit" value="Enviar">
+                    </form>
                 </div>
             </div>
         </section>
