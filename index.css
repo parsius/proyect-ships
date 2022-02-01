@@ -708,11 +708,25 @@ header:hover{
     .respmenu{
         display:none;
     }
+
+    
 }
 
 @media (max-width: 800px){
     #navegador{
         display: none;
+    }
+    #imagen_nosotros{
+        display: none;
+    }
+    #texto_nosotros{
+        width: 75%;
+    }
+    .servicio{
+        flex-direction: column;
+    }
+    .wrapper{
+        width:100% ;
     }
 }
 
