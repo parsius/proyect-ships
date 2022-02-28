@@ -507,7 +507,9 @@ section{
 form textarea{
     height: 8vh !important;
 }
-
+form textarea::placeholder{
+    color: black;
+}
 header:hover{
     background-color: black;
 }
