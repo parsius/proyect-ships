@@ -253,6 +253,7 @@ section{
     animation-name: naveReposo;
     animation-duration: 20s;
     animation-delay: 1s;
+    animation-iteration-count: infinite;
 }
 #nave img{
     width: 100%;
@@ -282,6 +283,10 @@ section{
     display: flex;
     flex-direction: row;
     
+}
+
+.reverse{
+    flex-direction: row-reverse;
 }
 
 .servicio div{
@@ -474,7 +479,7 @@ section{
     align-items: center;
 }
 
-#containerContact form input{
+#containerContact form input, textarea{
     margin-top: 10%;
     width: 50%;
     height: 4vh;
@@ -489,9 +494,18 @@ section{
     background-color: rgb(243, 241, 241);
 }
 
+#containerContact form textarea:focus{
+    
+    border-bottom: 3px solid rgb(3, 3, 163);
+    background-color: rgb(243, 241, 241);
+}
+
 #containerContact form input[type="submit"]{
     background: blue;
     color: white;
+}
+form textarea{
+    height: 8vh !important;
 }
 
 header:hover{
@@ -565,6 +579,8 @@ header:hover{
 #pregReg{
     display: inline-block;
     width: 100%;
+    margin-top: 5%;
+    text-align: center;
 }
 .registro a{
     
@@ -839,6 +855,26 @@ footer{
     #containerContact div:nth-of-type(2){
         width: 90%;
     }
+    .contReg{
+        flex-direction: column-reverse;
+        width: 80%;
+        height: 60%;
+    }
+    .imagenReg{
+        height: 50%;
+        width: 100%;
+    }
+    .volver{
+        width: 15%;
+        height: 10%;
+    }
+    .registro form input{
+        width: 70%;
+    }
+    #logo img{
+        width: 100%;
+    }
+
 }
 
 
