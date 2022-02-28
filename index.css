@@ -610,6 +610,7 @@ header:hover{
     color: white;
     position: relative;
     margin-left: 80%;
+    
     background: #123456;
     min-height: 48px;
     
@@ -622,6 +623,7 @@ header:hover{
   .respmenu input:checked ~ nav{
     display: flex;
     flex-direction: column !important;
+    margin-top: 50%;
 }
 
 .respmenu input:checked ~ nav ul{
