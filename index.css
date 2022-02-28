@@ -4,6 +4,7 @@
 }
 html { 
     scroll-behavior: smooth; 
+    
 }
 body{
     overflow-x: hidden;
@@ -426,7 +427,7 @@ section{
 #contact{
     display: flex;
     flex-direction: column;
-    position: absolute;
+    
     
 }
 #contactTitulo{
@@ -608,18 +609,24 @@ header:hover{
   .respmenu {
     color: white;
     position: relative;
-    margin-left: 90%;
+    margin-left: 80%;
     background: #123456;
     min-height: 48px;
+    
   }
   
   .respmenu nav {
     display: none;
   }
   
-  .respmenu input:checked ~ nav {
+  .respmenu input:checked ~ nav{
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
+}
+
+.respmenu input:checked ~ nav ul{
+    display: flex;
+    flex-direction: column !important;
 }
   
   .respmenu input:checked ~ .fa-bars {
@@ -629,6 +636,91 @@ header:hover{
   .respmenu input:not(:checked) ~ .fa-times {
     display: none;
   }
+
+/*FIN MENU HAMBURGUESA */
+
+footer{
+    background-color: black;
+      height: 30vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: row;
+      box-shadow: 0px -3px 15px 5px #666666;
+}
+
+#patrocinador{
+      width: 20%;
+      height: 100%;
+     
+}
+#patrocinador div:nth-of-type(1){
+      color: white;
+      height: 15%;
+      text-align: center;
+}
+#patrocinador div:nth-of-type(2){
+      height: 85%;
+      background-image: url(./recursos/NASA_logo.svg.png);
+      background-size: 100% 100%;
+      
+}
+
+#redes{
+      width: 50%;
+      height: 100%;
+      
+}
+
+#palabra p{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+#iconos{
+    
+    height: 30%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+#iconos div{
+    height: 100%;
+    width: 15%;
+    
+    
+}
+
+.fa-brands{
+    font-size: 3rem;
+    color: white;
+}
+
+
+  #puntosDeVenta{
+      width: 30%;
+      height: 100%;
+     
+  }
+#puntosDeVenta p{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+#puntosDeVenta div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+#puntosDeVenta a {
+    margin-top: 5%;
+    width: 100%;
+    color:white;
+    text-align: center;
+}
 
 /*ANIMACIONES*/
 @keyframes naveReposo{
@@ -716,6 +808,12 @@ header:hover{
     #navegador{
         display: none;
     }
+    #nuestra_empresa{
+        background-size: 100% 100%;
+    }
+    #texto_nosotros{
+        background: none;
+    }
     #imagen_nosotros{
         display: none;
     }
@@ -724,9 +822,20 @@ header:hover{
     }
     .servicio{
         flex-direction: column;
+        
+        align-items: center;
     }
     .wrapper{
         width:100% ;
+    }
+    html{
+        font-size: 8px;
+    }
+    #containerContact div:nth-of-type(1){
+        display: none;
+    }
+    #containerContact div:nth-of-type(2){
+        width: 90%;
     }
 }
 
